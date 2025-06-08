@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram id="seq-diagram" name="Diagrama de Secuencia: Completar Pedido">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Participantes -->
+        <mxCell id="2" value="Usuario" style="swimlane;html=1;" vertex="1" parent="1"><mxGeometry x="60" y="40" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="3" value="Frontend (Angular)" style="swimlane;html=1;" vertex="1" parent="1"><mxGeometry x="200" y="40" width="140" height="40" as="geometry" /></mxCell>
+        <mxCell id="4" value="Backend (Node.js/Express)" style="swimlane;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="40" width="180" height="40" as="geometry" /></mxCell>
+        <mxCell id="5" value="Base de Datos (MySQL)" style="swimlane;html=1;" vertex="1" parent="1"><mxGeometry x="650" y="40" width="140" height="40" as="geometry" /></mxCell>
+        <!-- Mensajes -->
+        <mxCell id="10" value="1: Solicita completar pedido" style="endArrow=block;html=1;" edge="1" parent="1" source="2" target="3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="11" value="2: POST /api/pedidos" style="endArrow=block;html=1;" edge="1" parent="1" source="3" target="4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="12" value="3: Validar stock y calcular totales" style="endArrow=block;dashed=1;html=1;" edge="1" parent="1" source="4" target="5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="13" value="4: Guardar pedido y detalles" style="endArrow=block;dashed=1;html=1;" edge="1" parent="1" source="4" target="5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="14" value="5: Confirmación y datos de factura" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="15" value="6: Mostrar factura y QR" style="endArrow=block;html=1;" edge="1" parent="1" source="3" target="2"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

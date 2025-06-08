@@ -1,0 +1,48 @@
+# Node modules
+node_modules/
+catalog-backend/node_modules/
+catalog-frontend/node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE/Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database/backup
+*.bak
+*.sql
+
+# Draw.io backups
+*.drawio.bkp
+
+# Misc
+*.log
+coverage/
+
+# Angular build
+catalog-frontend/dist/
+
+# Others
+package-lock.json
+yarn.lock

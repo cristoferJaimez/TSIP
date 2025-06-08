@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram id="vercatalogo-usecase" name="Caso de Uso: Ver catálogo (UML Detallado)">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Límite del sistema -->
+        <mxCell id="2" value="Sistema" style="swimlane;html=1;strokeColor=#1565c0;fillColor=#e3f2fd;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="420" height="200" as="geometry" />
+        </mxCell>
+        <!-- Actor -->
+        <mxCell id="3" value="Usuario" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <!-- Caso de uso principal -->
+        <mxCell id="4" value="Ver catálogo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="180" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <!-- Subcaso de uso: Filtrar productos -->
+        <mxCell id="5" value="Filtrar productos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="320" y="60" width="130" height="40" as="geometry" />
+        </mxCell>
+        <!-- Subcaso de uso: Ver detalles -->
+        <mxCell id="6" value="Ver detalles" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="320" y="130" width="130" height="40" as="geometry" />
+        </mxCell>
+        <!-- Relación de participación -->
+        <mxCell id="7" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="4"/>
+        <!-- Relaciones include -->
+        <mxCell id="8" value="«include»" style="dashed=1;endArrow=block;html=1;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="65" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="«include»" style="dashed=1;endArrow=block;html=1;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="135" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

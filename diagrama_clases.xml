@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram id="class-diagram" name="Diagrama de Clases">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Usuario -->
+        <mxCell id="2" value="Usuario" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="- id_usuario: int\n- nombre: string\n- email: string\n- password: string\n- rol: int\nMétodos:\n+ login()\n+ registrar()" style="text;html=1;" vertex="1" parent="2">
+          <mxGeometry x="0" y="30" width="180" height="90" as="geometry" />
+        </mxCell>
+        <!-- Rol -->
+        <mxCell id="100" value="Rol" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="101" value="- id_rol: int\n- nombre: string" style="text;html=1;" vertex="1" parent="100">
+          <mxGeometry x="0" y="30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <!-- Producto -->
+        <mxCell id="4" value="Producto" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="- id_articulo: int\n- nombre: string\n- descripcion: string\n- precio: decimal\n- stock: int\n- destacado: bool\nMétodos:\n+ buscar()\n+ agregar()" style="text;html=1;" vertex="1" parent="4">
+          <mxGeometry x="0" y="30" width="200" height="90" as="geometry" />
+        </mxCell>
+        <!-- ImagenProducto -->
+        <mxCell id="6" value="ImagenProducto" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="40" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="- id_imagen: int\n- id_articulo: int\n- url: string" style="text;html=1;" vertex="1" parent="6">
+          <mxGeometry x="0" y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <!-- Caracteristica -->
+        <mxCell id="8" value="Caracteristica" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="140" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="- id_caracteristica: int\n- nombre: string" style="text;html=1;" vertex="1" parent="8">
+          <mxGeometry x="0" y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <!-- Pedido -->
+        <mxCell id="10" value="Pedido" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="- id_pedido: int\n- id_usuario: int\n- fecha: date\n- subtotal: decimal\n- iva: decimal\n- domicilio: decimal\n- total: decimal\nMétodos:\n+ generarFactura()" style="text;html=1;" vertex="1" parent="10">
+          <mxGeometry x="0" y="30" width="200" height="80" as="geometry" />
+        </mxCell>
+        <!-- DetallePedido -->
+        <mxCell id="12" value="DetallePedido" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="250" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="- id_detalle: int\n- id_pedido: int\n- id_articulo: int\n- cantidad: int\n- precio_unitario: decimal" style="text;html=1;" vertex="1" parent="12">
+          <mxGeometry x="0" y="30" width="180" height="50" as="geometry" />
+        </mxCell>
+        <!-- Carrito -->
+        <mxCell id="14" value="Carrito" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="250" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="- id_carrito: int\n- id_usuario: int\n- fecha: date" style="text;html=1;" vertex="1" parent="14">
+          <mxGeometry x="0" y="30" width="160" height="40" as="geometry" />
+        </mxCell>
+        <!-- DetalleCarrito -->
+        <mxCell id="16" value="DetalleCarrito" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="250" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="- id_detalle: int\n- id_carrito: int\n- id_articulo: int\n- cantidad: int" style="text;html=1;" vertex="1" parent="16">
+          <mxGeometry x="0" y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <!-- Relaciones -->
+        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="2" target="100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="2" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="2" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="4" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="10" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="12" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="14" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="16" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram id="usecase-diagram" name="Diagrama de Casos de Uso UML Mejorado">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Actores -->
+        <mxCell id="2" value="Administrador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1"><mxGeometry x="40" y="60" width="30" height="60" as="geometry" /></mxCell>
+        <mxCell id="3" value="Usuario" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1"><mxGeometry x="40" y="200" width="30" height="60" as="geometry" /></mxCell>
+        <!-- Casos de uso principales -->
+        <mxCell id="10" value="Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="200" y="60" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="11" value="Registrar" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="200" y="120" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="12" value="Ver catálogo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="60" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="13" value="Buscar productos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="120" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="14" value="Ver productos destacados" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="180" width="140" height="40" as="geometry" /></mxCell>
+        <mxCell id="15" value="Agregar al carrito" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="600" y="60" width="140" height="40" as="geometry" /></mxCell>
+        <mxCell id="16" value="Ver carrito" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="600" y="120" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="17" value="Editar carrito" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="600" y="180" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="18" value="Completar pedido" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="800" y="60" width="140" height="40" as="geometry" /></mxCell>
+        <mxCell id="19" value="Calcular totales" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1000" y="60" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="20" value="Ver pedidos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="800" y="120" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="21" value="Ver factura/QR" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1000" y="120" width="140" height="40" as="geometry" /></mxCell>
+        <mxCell id="22" value="Logout" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1200" y="60" width="120" height="40" as="geometry" /></mxCell>
+        <!-- Casos de uso admin -->
+        <mxCell id="30" value="Administrar productos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="300" width="160" height="40" as="geometry" /></mxCell>
+        <mxCell id="31" value="Administrar usuarios" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="600" y="300" width="160" height="40" as="geometry" /></mxCell>
+        <mxCell id="32" value="Administrar pedidos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="800" y="300" width="160" height="40" as="geometry" /></mxCell>
+        <mxCell id="33" value="Administrar imágenes" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1000" y="300" width="160" height="40" as="geometry" /></mxCell>
+        <mxCell id="34" value="Administrar características" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1200" y="300" width="180" height="40" as="geometry" /></mxCell>
+        <!-- Relaciones de participación (líneas sólidas) -->
+        <mxCell id="40" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="10"/>
+        <mxCell id="41" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="30"/>
+        <mxCell id="42" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="31"/>
+        <mxCell id="43" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="32"/>
+        <mxCell id="44" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="33"/>
+        <mxCell id="45" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="34"/>
+        <mxCell id="46" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="22"/>
+        <mxCell id="47" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="10"/>
+        <mxCell id="48" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="11"/>
+        <mxCell id="49" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="12"/>
+        <mxCell id="50" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="13"/>
+        <mxCell id="51" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="14"/>
+        <mxCell id="52" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="15"/>
+        <mxCell id="53" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="16"/>
+        <mxCell id="54" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="17"/>
+        <mxCell id="55" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="18"/>
+        <mxCell id="56" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="19"/>
+        <mxCell id="57" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="20"/>
+        <mxCell id="58" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="21"/>
+        <mxCell id="59" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="22"/>
+        <!-- Relaciones include/extend UML -->
+        <mxCell id="60" value="«include»" style="dashed=1;endArrow=block;html=1;" edge="1" parent="1" source="18" target="19"/>
+        <mxCell id="61" value="«include»" style="dashed=1;endArrow=block;html=1;" edge="1" parent="1" source="15" target="16"/>
+        <mxCell id="62" value="«include»" style="dashed=1;endArrow=block;html=1;" edge="1" parent="1" source="16" target="17"/>
+        <mxCell id="63" value="«extend»" style="dashed=1;endArrow=open;html=1;" edge="1" parent="1" source="20" target="21"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
