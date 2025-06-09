@@ -39,8 +39,14 @@ package.json            # Dependencias globales
 ## Instalación y Configuración
 ### 1. Clonar el repositorio
 ```bash
-git clone <URL_DEL_REPOSITORIO>
-cd <NOMBRE_DEL_REPOSITORIO>
+git clone [<URL_DEL_REPOSITORIO>](https://github.com/cristoferJaimez/TSIP.git)
+cd TSIP
+cd catalog-backend
+  npm install
+  npm run start
+cd catalog-frontend
+  npm install
+  ng serve
 ```
 
 ### 2. Configurar la base de datos
@@ -107,9 +113,9 @@ ng serve
 - Recomendación: No subir `node_modules`, archivos de entorno, ni builds.
 
 ## Créditos
-- **Desarrollador:** [Tu Nombre]
-- **Contacto:** [Tu Email]
-- **Institución:** [Nombre de la institución o curso]
+- **Desarrollador:** 
+- **Contacto:** 
+- **Institución:** 
 
 ---
 
